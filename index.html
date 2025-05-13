@@ -1,118 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-T">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rebound AI - Personalized Beauty Discovery</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Add any icon library if needed e.g. Font Awesome -->
+    <title>Rebound - AI-Powered Beauty Discovery Platform</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header/Navigation (Optional, but good for structure) -->
     <header>
         <nav>
-            <!-- Logo or Site Name -->
-            <div class="logo">Rebound AI</div>
-            <!-- Navigation Links (can be added later) -->
-            <!-- <ul class="nav-links">
-                <li><a href="#features">Features</a></li>
-                <li><a href="#how-it-works">How It Works</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul> -->
+            <div class="container">
+                <div class="logo">
+                    <a href="#">Rebound</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#brands">Brands</a></li>
+                    <li><a href="#waitlist" class="btn btn-outline">Join Waitlist</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
         </nav>
+
+        <div class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Find Beauty Products That <span class="highlight">Actually Work For You</span></h1>
+                    <p>Rebound's AI-powered platform cuts through the noise, analyzing thousands of reviews to match you with products backed by real results.</p>
+                    <div class="hero-cta">
+                        <a href="#waitlist" class="btn btn-primary">Join Waitlist</a>
+                        <a href="#how-it-works" class="btn btn-secondary">How It Works</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="mockup-section">
+                        <img src="resources/firstquestion.png" alt="Rebound App Question 1" class="mockup-img">
+                        <img src="resources/search.png" alt="Rebound App Search Interface" class="mockup-img">
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="hero-content">
-            <h1>Find products that actually work for you.</h1>
-            <p>Rebound is an AI-powered beauty discovery platform that replaces static blogs with dynamic, crowd-validated rankings.</p>
-            <button id="cta-button">Join Waitlist</button>
-            <!-- Or: <button id="cta-button">Explore App</button> -->
-        </div>
-    </section>
-
-    <!-- What Rebound Does Section -->
-    <section id="what-rebound-does">
-        <h2>The Trust Gap in Beauty? Solved.</h2>
-        <p>Tired of endless scrolling, biased reviews, and products that don't deliver? The beauty industry has a trust problem. Rebound cuts through the noise. Our AI analyzes thousands of real user experiences and product data to give you unbiased, personalized recommendations you can rely on. Finally, discover products that truly match your needs and preferences.</p>
-    </section>
-
-    <!-- How It Works Section -->
-    <section id="how-it-works">
-        <h2>How Rebound Works</h2>
-        <div class="steps-container">
-            <div class="step">
-                <div class="step-icon">1</div>
-                <h3>Take Our Quiz</h3>
-                <p>Answer a few simple questions about your skin, hair, and preferences.</p>
+    <section id="what-we-do" class="section-pad">
+        <div class="container">
+            <div class="section-header">
+                <h2>The <span class="highlight">Trust Problem</span> in Beauty</h2>
+                <p>In a world of sponsored content and staged reviews, finding products that truly work for you is harder than ever.</p>
             </div>
-            <div class="step">
-                <div class="step-icon">2</div>
-                <h3>AI Analysis</h3>
-                <p>Our smart algorithms process your profile against thousands of products and reviews.</p>
-            </div>
-            <div class="step">
-                <div class="step-icon">3</div>
-                <h3>Personalized Recs</h3>
-                <p>Get a curated list of products with transparent pros & cons, just for you.</p>
+            <div class="trust-grid">
+                <div class="trust-card">
+                    <div class="icon"><i class="fas fa-ad"></i></div>
+                    <h3>Paid Promotions Everywhere</h3>
+                    <p>70% of beauty content is influenced by brand partnerships, making genuine recommendations rare.</p>
+                </div>
+                <div class="trust-card">
+                    <div class="icon"><i class="fas fa-question-circle"></i></div>
+                    <h3>One-Size-Fits-All Reviews</h3>
+                    <p>Traditional beauty blogs can't account for your unique skin type, concerns, and preferences.</p>
+                </div>
+                <div class="trust-card">
+                    <div class="icon"><i class="fas fa-search"></i></div>
+                    <h3>Information Overload</h3>
+                    <p>Sorting through thousands of reviews to find what works for you is time-consuming and overwhelming.</p>
+                </div>
+                <div class="trust-card highlight-card">
+                    <div class="icon"><i class="fas fa-robot"></i></div>
+                    <h3>Rebound's Solution</h3>
+                    <p>Our AI analyzes thousands of authentic reviews, personalizes recommendations to your needs, and provides transparent pros/cons summaries.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Product Discovery Mockups Section -->
-    <section id="product-mockups">
-        <h2>See Rebound in Action</h2>
-        <!-- Placeholder for screenshots/mockups -->
-        <div class="mockup-gallery">
-            <img src="placeholder-quiz.png" alt="Rebound Quiz Mockup">
-            <img src="placeholder-results.png" alt="Rebound Recommendations Mockup">
-            <img src="placeholder-product.png" alt="Rebound Product Details Mockup">
+    <section id="how-it-works" class="section-pad dark-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>How <span class="highlight">Rebound</span> Works</h2>
+                <p>Our proprietary AI engine transforms how you discover beauty products</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Take Our Quick Beauty Quiz</h3>
+                        <p>Tell us about your skin type, concerns, preferences, and beauty goals in under 2 minutes.</p>
+                    </div>
+                    <div class="step-image">
+                        <img src="img/step1.png" alt="Beauty Quiz">
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>AI Analysis & Matching</h3>
+                        <p>Our algorithms process thousands of verified reviews and match them to your unique profile.</p>
+                    </div>
+                    <div class="step-image">
+                        <img src="img/step2.png" alt="AI Analysis">
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Personalized Recommendations</h3>
+                        <p>Receive tailored product suggestions with transparent pros, cons, and compatibility scores.</p>
+                    </div>
+                    <div class="step-image">
+                        <img src="img/step3.png" alt="Personalized Recommendations">
+                    </div>
+                </div>
+            </div>
         </div>
-        <p><em>Illustrative mockups. Actual app interface may vary.</em></p>
     </section>
 
-    <!-- Trust Section -->
-    <section id="trust-signals">
-        <h2>Trusted by Beauty Lovers & Indie Brands</h2>
-        <div class="testimonials">
-            <!-- Mock Testimonial 1 -->
-            <div class="testimonial">
-                <p>"I wasted so much money before Rebound. Now I only buy what works!" - Sarah K.</p>
+    <section id="products" class="section-pad">
+        <div class="container">
+            <div class="section-header">
+                <h2>Discover Products That <span class="highlight">Work For You</span></h2>
+                <p>Rebound's AI provides personalized recommendations across all beauty categories</p>
             </div>
-            <!-- Mock Testimonial 2 -->
-            <div class="testimonial">
-                <p>"Finally, an unbiased way to find new beauty products. Rebound is a game-changer." - Alex P.</p>
+            <div class="product-showcase">
+                <div class="mockup-container">
+                    <img src="img/product-mockup.png" alt="Product Discovery Interface" class="main-mockup">
+                    <div class="mockup-features">
+                        <div class="feature">
+                            <div class="feature-icon"><i class="fas fa-thumbs-up"></i></div>
+                            <h3>Transparent Pros & Cons</h3>
+                            <p>No sugar-coating - just honest assessments based on real user experiences.</p>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon"><i class="fas fa-percentage"></i></div>
+                            <h3>Compatibility Score</h3>
+                            <p>See exactly how well each product matches your unique needs and preferences.</p>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon"><i class="fas fa-comments"></i></div>
+                            <h3>Real Review Insights</h3>
+                            <p>Our AI summarizes key points from thousands of authentic user reviews.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="brand-logos">
-            <!-- Placeholder for small indie brand logos -->
-            <span>Brand A</span> | <span>Brand B</span> | <span>Brand C</span>
-        </div>
-        <p class="mission-statement-highlight">
-            <strong>Our Mission:</strong> "Rebound is an AI-powered beauty discovery platform that replaces static blogs with dynamic, crowd-validated rankings. Our proprietary NLP pipeline processes thousands of product reviews and user queries daily to generate personalized recommendations and transparent pros/cons summaries. By leveraging fine-tuned LLMs (Mistral, DeepSeek), we solve the beauty industry's 'trust gap' while helping indie brands scale through data-driven insights. We're seeking cloud credits to optimize our AI infrastructure and expand our real-time personalization capabilities."
-        </p>
     </section>
 
-    <!-- Footer -->
+    <section id="brands" class="section-pad dark-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>An <span class="highlight">Abundance</span> of Products</h2>
+                <p>Discover your perfect match from thousands of products across all price points</p>
+            </div>
+            <div class="brands-grid">
+                <div class="brand-category">
+                    <h3>Skincare</h3>
+                    <p>500+ Brands</p>
+                    <div class="brands-showcase">
+                        <span class="brand-pill">The Ordinary</span>
+                        <span class="brand-pill">Drunk Elephant</span>
+                        <span class="brand-pill">CeraVe</span>
+                        <span class="brand-pill">La Roche-Posay</span>
+                        <span class="brand-pill">+496 more</span>
+                    </div>
+                </div>
+                <div class="brand-category">
+                    <h3>Makeup</h3>
+                    <p>350+ Brands</p>
+                    <div class="brands-showcase">
+                        <span class="brand-pill">Rare Beauty</span>
+                        <span class="brand-pill">Charlotte Tilbury</span>
+                        <span class="brand-pill">Fenty Beauty</span>
+                        <span class="brand-pill">e.l.f.</span>
+                        <span class="brand-pill">+346 more</span>
+                    </div>
+                </div>
+                <div class="brand-category">
+                    <h3>Haircare</h3>
+                    <p>300+ Brands</p>
+                    <div class="brands-showcase">
+                        <span class="brand-pill">Olaplex</span>
+                        <span class="brand-pill">Briogeo</span>
+                        <span class="brand-pill">Ouai</span>
+                        <span class="brand-pill">Verb</span>
+                        <span class="brand-pill">+296 more</span>
+                    </div>
+                </div>
+                <div class="brand-category">
+                    <h3>Body Care</h3>
+                    <p>250+ Brands</p>
+                    <div class="brands-showcase">
+                        <span class="brand-pill">Sol de Janeiro</span>
+                        <span class="brand-pill">Necessaire</span>
+                        <span class="brand-pill">Glow Recipe</span>
+                        <span class="brand-pill">Dove</span>
+                        <span class="brand-pill">+246 more</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="waitlist" class="section-pad">
+        <div class="container">
+            <div class="waitlist-container">
+                <div class="waitlist-content">
+                    <h2>Join Our <span class="highlight">Waitlist</span></h2>
+                    <p>Be among the first to experience personalized beauty recommendations powered by AI. Early access users receive premium features free for life.</p>
+                    <form id="waitlist-form" class="waitlist-form">
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your email address" required>
+                            <button type="submit" class="btn btn-primary">Join Waitlist</button>
+                        </div>
+                        <p class="form-disclaimer">We respect your privacy and will never share your information.</p>
+                    </form>
+                </div>
+                <div class="waitlist-image">
+                    <img src="img/waitlist-graphic.png" alt="Join Waitlist">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer>
-        <div class="footer-content">
-            <div class="waitlist-form">
-                <h3>Join the Rebound Waitlist</h3>
-                <form id="waitlistForm">
-                    <input type="email" id="emailInput" placeholder="Enter your email" required>
-                    <button type="submit">Sign Up</button>
-                </form>
-                <p id="waitlistMessage"></p>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <a href="#">Rebound</a>
+                    <p>AI-powered beauty discovery that actually works.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
             </div>
-            <div class="social-links">
-                <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter/X</a> | <a href="#">LinkedIn</a>
-                <!-- Replace # with actual links -->
+            <div class="footer-middle">
+                <div class="footer-nav">
+                    <div class="footer-nav-column">
+                        <h3>Platform</h3>
+                        <ul>
+                            <li><a href="#how-it-works">How It Works</a></li>
+                            <li><a href="#products">Products</a></li>
+                            <li><a href="#brands">Brands</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-column">
+                        <h3>Company</h3>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-column">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-cta">
+                    <h3>Stay in the loop</h3>
+                    <p>Get updates on product launches and beauty insights.</p>
+                    <form id="newsletter-form" class="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" id="newsletter-email" placeholder="Your email address" required>
+                            <button type="submit" class="btn btn-outline">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <p class="copyright">&copy; 2024 Rebound-AI.com. All rights reserved.</p>
+            <div class="footer-bottom">
+                <p>© 2023 Rebound. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html> 
