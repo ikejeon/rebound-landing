@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Netlify Forms</title>
+  <meta name="robots" content="noindex">
+</head>
+<body>
+  <!-- This hidden page is just for Netlify to detect forms properly -->
+  
+  <!-- Waitlist Form -->
+  <form name="waitlist" netlify netlify-honeypot="bot-field" hidden>
+    <input type="email" name="email" />
+    <input type="hidden" name="subject" value="New Rebound Waitlist Signup" />
+    <input type="hidden" name="recipient" value="getreboundai@gmail.com" />
+    <input name="bot-field" />
+  </form>
+  
+  <!-- Newsletter Form -->
+  <form name="newsletter" netlify netlify-honeypot="bot-field" hidden>
+    <input type="email" name="email" />
+    <input type="hidden" name="subject" value="New Rebound Newsletter Subscription" />
+    <input type="hidden" name="recipient" value="getreboundai@gmail.com" />
+    <input name="bot-field" />
+  </form>
+</body>
+</html> 

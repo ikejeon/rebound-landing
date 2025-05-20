@@ -3,10 +3,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
     
-    hamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-        document.body.classList.toggle('no-scroll');
-    });
+    if (hamburger) {
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            document.body.classList.toggle('no-scroll');
+            hamburger.classList.toggle('active');
+        });
+    }
     
     // Close mobile menu when clicking on links
     const navLinksItems = document.querySelectorAll('.nav-links a');
@@ -53,6 +56,9 @@ document.addEventListener('DOMContentLoaded', () => {
             
             // You could also store in localStorage or send to a service like Mailchimp
             console.log('Waitlist signup:', email);
+            
+            // Let the form submit normally to Netlify
+            localStorage.setItem('formSubmitted', 'waitlist');
         });
     }
     
@@ -70,6 +76,9 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>`;
             
             console.log('Newsletter signup:', email);
+            
+            // Let the form submit normally to Netlify
+            localStorage.setItem('formSubmitted', 'newsletter');
         });
     }
     
@@ -122,4 +131,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     `;
     document.head.appendChild(style);
+    
+    // Check if we're on the success page after a form submission
+    const isSuccessPage = window.location.pathname.includes('success');
+    if (isSuccessPage) {
+        const formType = localStorage.getItem('formSubmitted');
+        if (formType) {
+            localStorage.removeItem('formSubmitted');
+            // Can add custom success message handling here if needed
+        }
+    }
 }); 

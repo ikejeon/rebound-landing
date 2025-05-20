@@ -118,6 +118,33 @@
             filter: none !important; /* Ensure images display in full color */
             -webkit-filter: none !important;
         }
+        
+        /* About section styling */
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+            padding: 0 20px;
+        }
+        
+        .about-content p {
+            margin-bottom: 2rem;
+            line-height: 1.9;
+            font-size: 1.1rem;
+            color: #333;
+        }
+        
+        .about-content p:last-child {
+            margin-bottom: 0;
+        }
+        
+        /* Section header adjustments */
+        #about .section-header {
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 20px;
+        }
     </style>
 </head>
 <body>
@@ -275,7 +302,7 @@
                 <h2>Sample <span class="highlight">Products</span> from our App</h2>
                 <p>Here's a glimpse of what you'll discover in the Rebound app</p>
                 <div style="background-color: #f8f9fa; padding: 15px; border-radius: 8px; margin-top: 20px; text-align: center;">
-                    <p style="font-size: 14px; color: #666;">As an Amazon Associate, I earn from qualifying purchases. This means if you click on a link and make a purchase, I may receive a small commission at no extra cost to you.</p>
+                    <p style="font-size: 14px; color: #666;">This site contains affiliate links. If you click through and make a purchase, I may earn a small commission at no extra cost to you.</p>
                 </div>
             </div>
             <div class="product-card-grid">
@@ -286,7 +313,7 @@
                             <p class="product-description">Plant-based spray with 62% ethyl alcohol that kills 99.9% of germs while moisturizing with aloe and glycerin.</p>
                         </div>
                         <div>
-                            <a href="https://amzn.to/3FiePLZ" target="_blank" rel="nofollow sponsored" class="btn btn-primary">Shop on Amazon</a>
+                            <a href="https://amzn.to/3FiePLZ" target="_blank" rel="nofollow sponsored" class="btn btn-primary">BUY IN STORE</a>
                         </div>
                     </div>
                 </div>
@@ -297,7 +324,7 @@
                             <p class="product-description">Mild, tear-free 2-in-1 solution for baby's sensitive skin with chamomile essence and provitamin B5.</p>
                         </div>
                         <div>
-                            <a href="https://amzn.to/4kpZ9oT" target="_blank" rel="nofollow sponsored" class="btn btn-primary">Shop on Amazon</a>
+                            <a href="https://amzn.to/4kpZ9oT" target="_blank" rel="nofollow sponsored" class="btn btn-primary">BUY IN STORE</a>
                         </div>
                     </div>
                 </div>
@@ -308,7 +335,7 @@
                             <p class="product-description">Formulated with ceramides, retinol and licorice root extract to reduce appearance of post-acne marks and pores.</p>
                         </div>
                         <div>
-                            <a href="https://amzn.to/3YRWIDi" target="_blank" rel="nofollow sponsored" class="btn btn-primary">Shop on Amazon</a>
+                            <a href="https://amzn.to/3YRWIDi" target="_blank" rel="nofollow sponsored" class="btn btn-primary">BUY IN STORE</a>
                         </div>
                     </div>
                 </div>
@@ -319,7 +346,7 @@
                             <p class="product-description">Daily face wash for oily skin with hyaluronic acid, ceramides, and niacinamide. Non-drying and fragrance-free.</p>
                         </div>
                         <div>
-                            <a href="https://amzn.to/4dmll0K" target="_blank" rel="nofollow sponsored" class="btn btn-primary">Shop on Amazon</a>
+                            <a href="https://amzn.to/4dmll0K" target="_blank" rel="nofollow sponsored" class="btn btn-primary">BUY IN STORE</a>
                         </div>
                     </div>
                 </div>
@@ -433,7 +460,7 @@
                 <div class="waitlist-content">
                     <h2>Join Our <span class="highlight">Waitlist</span></h2>
                     <p>Be among the first to experience personalized beauty recommendations powered by AI. Early access users receive premium features free for life.</p>
-                    <form id="waitlist-form" class="waitlist-form" name="waitlist" data-netlify="true" netlify netlify-honeypot="bot-field" action="/success" method="POST">
+                    <form id="waitlist-form" class="waitlist-form" name="waitlist" method="POST" netlify netlify-honeypot="bot-field" action="/success.html">
                         <input type="hidden" name="form-name" value="waitlist">
                         <input type="hidden" name="subject" value="New Rebound Waitlist Signup">
                         <input type="hidden" name="recipient" value="getreboundai@gmail.com">
@@ -498,7 +525,7 @@
                 <div class="footer-cta">
                     <h3>Stay in the loop</h3>
                     <p>Get updates on product launches and beauty insights.</p>
-                    <form id="newsletter-form" class="newsletter-form" name="newsletter" data-netlify="true" netlify netlify-honeypot="bot-field" action="/success" method="POST">
+                    <form id="newsletter-form" class="newsletter-form" name="newsletter" method="POST" netlify netlify-honeypot="bot-field" action="/success.html">
                         <input type="hidden" name="form-name" value="newsletter">
                         <input type="hidden" name="subject" value="New Rebound Newsletter Subscription">
                         <input type="hidden" name="recipient" value="getreboundai@gmail.com">
