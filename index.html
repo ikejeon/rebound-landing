@@ -24,6 +24,9 @@
             overflow: hidden;
             box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
             transition: transform 0.3s, box-shadow 0.3s;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
         }
         
         .product-card:hover {
@@ -62,6 +65,10 @@
         
         .product-card-content {
             padding: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            justify-content: space-between;
         }
         
         .product-card h3 {
@@ -191,7 +198,7 @@
                     </div>
                     <div class="step-image">
                         <div class="phone-mockup-container">
-                            <img src="resources/search.png" alt="Personalized Recommendations" class="mockup-img">
+                            <img src="resources/placeholdersearch.png" alt="Personalized Recommendations" class="mockup-img">
                         </div>
                     </div>
                 </div>
@@ -247,7 +254,7 @@
                 
                 <!-- Second Screenshot -->
                 <div style="width: 300px; text-align: center; background: white; border-radius: 12px; padding: 20px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);">
-                    <img src="resources/search.png" alt="Rebound app product search interface" style="max-width: 180px; height: auto; margin: 0 auto 15px; filter: none !important; -webkit-filter: none !important; display: block;">
+                    <img src="resources/placeholdersearch.png" alt="Rebound app product search interface" style="max-width: 180px; height: auto; margin: 0 auto 15px; filter: none !important; -webkit-filter: none !important; display: block;">
                     <h3 style="font-size: 18px; margin-bottom: 10px;">Product Discovery</h3>
                     <p style="color: #718096; font-size: 14px;">Browse a curated selection of products that match your unique profile and preferences.</p>
                 </div>
@@ -267,34 +274,53 @@
             <div class="section-header">
                 <h2>Sample <span class="highlight">Products</span> from our App</h2>
                 <p>Here's a glimpse of what you'll discover in the Rebound app</p>
+                <div style="background-color: #f8f9fa; padding: 15px; border-radius: 8px; margin-top: 20px; text-align: center;">
+                    <p style="font-size: 14px; color: #666;">As an Amazon Associate, I earn from qualifying purchases. This means if you click on a link and make a purchase, I may receive a small commission at no extra cost to you.</p>
+                </div>
             </div>
             <div class="product-card-grid">
                 <div class="product-card">
-                    <img src="resources/CeraVe Hydrating Cleanser.jpg" alt="Product image of CeraVe Hydrating Cleanser" style="width: 100%; height: 220px; object-fit: contain;">
                     <div class="product-card-content">
-                        <h3>CeraVe Hydrating Cleanser</h3>
-                        <p class="product-description">Hydrating cleanser with essential ceramides and hyaluronic acid for all skin types.</p>
+                        <div>
+                            <h3>The Honest Company Hand Sanitizer</h3>
+                            <p class="product-description">Plant-based spray with 62% ethyl alcohol that kills 99.9% of germs while moisturizing with aloe and glycerin.</p>
+                        </div>
+                        <div>
+                            <a href="https://amzn.to/3FiePLZ" target="_blank" rel="nofollow sponsored" class="btn btn-primary">Shop on Amazon</a>
+                        </div>
                     </div>
                 </div>
                 <div class="product-card">
-                    <img src="resources/The-Ordinary-Niacinamide.jpg" alt="Product image of The Ordinary Niacinamide Serum" style="width: 100%; height: 220px; object-fit: contain; filter: none !important; -webkit-filter: none !important;">
                     <div class="product-card-content">
-                        <h3>The Ordinary Niacinamide 10% + Zinc 1%</h3>
-                        <p class="product-description">High-strength vitamin and mineral formula to reduce appearance of blemishes.</p>
+                        <div>
+                            <h3>Aquaphor Baby Wash and Shampoo</h3>
+                            <p class="product-description">Mild, tear-free 2-in-1 solution for baby's sensitive skin with chamomile essence and provitamin B5.</p>
+                        </div>
+                        <div>
+                            <a href="https://amzn.to/4kpZ9oT" target="_blank" rel="nofollow sponsored" class="btn btn-primary">Shop on Amazon</a>
+                        </div>
                     </div>
                 </div>
                 <div class="product-card">
-                    <img src="resources/Glow Recipe Watermelon Pink Juice Moisturizer.jpg" alt="Product image of Glow Recipe Watermelon Moisturizer" style="width: 100%; height: 220px; object-fit: contain;">
                     <div class="product-card-content">
-                        <h3>Glow Recipe Watermelon Pink Juice Moisturizer</h3>
-                        <p class="product-description">Oil-free, lightweight gel moisturizer with vitamin C-rich watermelon extract.</p>
+                        <div>
+                            <h3>Amazon Basics Retinol Serum</h3>
+                            <p class="product-description">Formulated with ceramides, retinol and licorice root extract to reduce appearance of post-acne marks and pores.</p>
+                        </div>
+                        <div>
+                            <a href="https://amzn.to/3YRWIDi" target="_blank" rel="nofollow sponsored" class="btn btn-primary">Shop on Amazon</a>
+                        </div>
                     </div>
                 </div>
                 <div class="product-card">
-                    <img src="resources/La Roche-Posay Anthelios Sunscreen SPF 50.jpg" alt="Product image of La Roche-Posay Sunscreen" style="width: 100%; height: 220px; object-fit: contain;">
                     <div class="product-card-content">
-                        <h3>La Roche-Posay Anthelios Sunscreen SPF 50</h3>
-                        <p class="product-description">Broad spectrum SPF 50 sunscreen with Cell-Ox Shield® technology.</p>
+                        <div>
+                            <h3>CeraVe Foaming Facial Cleanser</h3>
+                            <p class="product-description">Daily face wash for oily skin with hyaluronic acid, ceramides, and niacinamide. Non-drying and fragrance-free.</p>
+                        </div>
+                        <div>
+                            <a href="https://amzn.to/4dmll0K" target="_blank" rel="nofollow sponsored" class="btn btn-primary">Shop on Amazon</a>
+                        </div>
                     </div>
                 </div>
             </div>
