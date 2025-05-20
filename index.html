@@ -145,6 +145,146 @@
             margin-right: auto;
             padding: 0 20px;
         }
+        
+        /* Mobile responsiveness fixes */
+        @media (max-width: 768px) {
+            .step {
+                flex-direction: column;
+                text-align: center;
+                padding: 0 15px;
+                margin-bottom: 60px;
+                position: relative;
+            }
+            
+            .step-number {
+                font-size: 4rem;
+                margin-bottom: 15px;
+                margin-right: 0;
+                line-height: 1;
+                position: relative;
+                z-index: 2;
+            }
+            
+            .step-content {
+                width: 100%;
+                padding-right: 0;
+                position: relative;
+                z-index: 2;
+            }
+            
+            .step-content h3 {
+                font-size: 1.6rem;
+                margin-bottom: 10px;
+            }
+            
+            .step-content p {
+                font-size: 0.95rem;
+            }
+            
+            .step-image {
+                width: 100%;
+                margin-top: 20px;
+                display: flex;
+                justify-content: center;
+                position: relative;
+                z-index: 2;
+            }
+            
+            .step-image img {
+                max-width: 80%;
+                height: auto;
+            }
+            
+            /* Fix for mobile viewport issues */
+            .section-pad {
+                padding: 70px 0;
+            }
+            
+            .section-header {
+                margin-bottom: 50px;
+                padding: 0 10px;
+            }
+            
+            .section-header h2 {
+                font-size: 2rem;
+                line-height: 1.2;
+            }
+            
+            .section-header p {
+                font-size: 1rem;
+            }
+            
+            /* Responsive card grid */
+            .product-card-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            /* Improve navbar on mobile */
+            nav {
+                height: 70px;
+            }
+            
+            .logo a {
+                font-size: 1.4rem;
+            }
+            
+            /* Fix for 01, 02, 03 numbered sections */
+            #how-it-works .step-number {
+                display: inline-block;
+                width: auto;
+                margin: 0 auto 15px;
+            }
+            
+            /* Fix text width in dark sections */
+            .dark-section .container {
+                box-sizing: border-box;
+            }
+            
+            .dark-section p {
+                max-width: 100%;
+            }
+            
+            .mockup-container {
+                flex-direction: column;
+            }
+            
+            .mockup-features {
+                margin-left: 0;
+                margin-top: 30px;
+            }
+            
+            /* Fix phone mockup size */
+            .phone-mockup-container {
+                max-width: 250px;
+                margin: 0 auto;
+            }
+            
+            /* Fix app screenshots container on mobile */
+            .app-screenshots {
+                gap: 15px;
+            }
+            
+            /* Improve the hero section spacing on mobile */
+            .hero-content h1 {
+                font-size: 2.2rem;
+                line-height: 1.3;
+            }
+            
+            .hero-content p {
+                font-size: 1rem;
+            }
+            
+            /* Fix content overflow */
+            body {
+                overflow-x: hidden;
+                width: 100%;
+            }
+            
+            .container {
+                width: 95%;
+                padding: 0 10px;
+            }
+        }
     </style>
 </head>
 <body>
