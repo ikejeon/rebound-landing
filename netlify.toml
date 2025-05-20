@@ -1,5 +1,10 @@
 [build]
-  publish = "/"
+  publish = "."
+  command = ""
+
+[dev]
+  publish = "."
+  port = 3000
   
 [[redirects]]
   from = "/*"

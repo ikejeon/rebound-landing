@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
             waitlistForm.innerHTML = `<div class="success-message">
                 <div class="success-icon"><i class="fas fa-check-circle"></i></div>
                 <h3>Thank you for joining our waitlist!</h3>
-                <p>We've sent a confirmation email to <strong>${email}</strong>.</p>
+                <p>Your email <strong>${email}</strong> is now in our waitlist.</p>
             </div>`;
             
             // You could also store in localStorage or send to a service like Mailchimp
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         nav.sticky {
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            background-color: rgba(18, 18, 18, 0.95);
+            background-color: rgba(255, 255, 255, 0.95);
         }
         
         body.no-scroll {
