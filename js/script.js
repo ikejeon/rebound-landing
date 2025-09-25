@@ -38,46 +38,17 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
     
-    // Waitlist form submission
+    // Allow Netlify forms (waitlist/newsletter) to submit natively
+    // We only tag the submission type for the success page UX
     const waitlistForm = document.getElementById('waitlist-form');
     if (waitlistForm) {
-        waitlistForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const email = document.getElementById('email').value;
-            
-            // Here you would normally send the data to your backend
-            // For now, we'll just simulate success and show a message
-            
-            waitlistForm.innerHTML = `<div class="success-message">
-                <div class="success-icon"><i class="fas fa-check-circle"></i></div>
-                <h3>Thank you for joining our waitlist!</h3>
-                <p>Your email <strong>${email}</strong> is now in our waitlist.</p>
-            </div>`;
-            
-            // You could also store in localStorage or send to a service like Mailchimp
-            console.log('Waitlist signup:', email);
-            
-            // Let the form submit normally to Netlify
+        waitlistForm.addEventListener('submit', () => {
             localStorage.setItem('formSubmitted', 'waitlist');
         });
     }
-    
-    // Newsletter form submission
     const newsletterForm = document.getElementById('newsletter-form');
     if (newsletterForm) {
-        newsletterForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const email = document.getElementById('newsletter-email').value;
-            
-            // Simulate success
-            const formGroup = newsletterForm.querySelector('.form-group');
-            formGroup.innerHTML = `<div class="success-message">
-                <p><i class="fas fa-check-circle"></i> Successfully subscribed!</p>
-            </div>`;
-            
-            console.log('Newsletter signup:', email);
-            
-            // Let the form submit normally to Netlify
+        newsletterForm.addEventListener('submit', () => {
             localStorage.setItem('formSubmitted', 'newsletter');
         });
     }

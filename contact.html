@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Rebound</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">Rebound</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html#how-it-works">How It Works</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="blog/index.html">Blog</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="section-pad">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact <span class="highlight">Us</span></h2>
+                <p>We'd love to hear from you</p>
+            </div>
+
+            <div class="waitlist-container" style="align-items: flex-start;">
+                <div class="waitlist-content">
+                    <h3>Email</h3>
+                    <p>For general inquiries and partnerships, email us at
+                        <a href="mailto:getreboundai@gmail.com">getreboundai@gmail.com</a>
+                    </p>
+
+                    <h3>Contact Form</h3>
+                    <form id="contact-form" class="waitlist-form" name="contact" method="POST" netlify netlify-honeypot="bot-field" action="/success.html">
+                        <input type="hidden" name="form-name" value="contact">
+                        <p class="hidden" style="display: none;">
+                            <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                        </p>
+                        <div class="form-group" style="display: grid; gap: 12px;">
+                            <input type="text" name="name" placeholder="Your name" required>
+                            <input type="email" name="email" placeholder="Your email" required>
+                            <textarea name="message" rows="5" placeholder="Your message" required></textarea>
+                            <button type="submit" class="btn btn-primary">SEND</button>
+                        </div>
+                        <p class="form-disclaimer">We'll get back to you as soon as possible.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>© 2025 Rebound. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contact-form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', () => {
+                    localStorage.setItem('formSubmitted', 'contact');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
+
+
